@@ -1,108 +1,107 @@
-🌟 Amplifica — Marketing, Audiovisual e Estratégias Digitais
+# 🌟 Amplifica — Marketing, Audiovisual e Estratégias Digitais
 
-Este é o repositório oficial do site da Amplifica, um estúdio especializado em marketing digital, produção audiovisual, fotografia profissional e campanhas digitais.
+Este é o repositório oficial do site da **Amplifica**, um estúdio especializado em **marketing digital, produção audiovisual, fotografia profissional e campanhas digitais**.
 
-O projeto foi reconstruído utilizando Next.js e React, adotando uma arquitetura moderna baseada em componentes reutilizáveis, animações avançadas e otimizações de performance.
+O projeto foi reconstruído utilizando **Next.js e React**, adotando uma arquitetura moderna baseada em **componentes reutilizáveis**, animações avançadas e otimizações de performance.
 
-O objetivo é criar uma landing page visualmente impactante, rápida e responsiva, destacando os serviços e o portfólio da Amplifica.
+O objetivo é criar uma **landing page visualmente impactante, rápida e responsiva**, destacando os serviços e o portfólio da Amplifica.
 
-🚀 Tecnologias Utilizadas
-Framework
+---
 
-Next.js (App Router) → Framework React para aplicações modernas, com otimização automática de performance e SEO.
+# 🚀 Tecnologias Utilizadas
 
-Linguagem
+## Framework
+- **Next.js (App Router)** → Framework React para aplicações modernas, com otimização automática de performance e SEO.
 
-JavaScript (React) → Estrutura baseada em componentes reutilizáveis.
+## Linguagem
+- **JavaScript (React)** → Estrutura baseada em componentes reutilizáveis.
 
-Estilização
+## Estilização
+- **TailwindCSS** → Framework utilitário para criação rápida de interfaces responsivas.
 
-TailwindCSS → Framework utilitário para criação rápida de interfaces responsivas.
+## Animações
+- **Framer Motion** → Biblioteca de animações modernas para React.
 
-Animações
+## Tipografia
+- **next/font** → Carregamento otimizado de fontes.
+- **Inter (Google Fonts)** → Fonte principal do site.
+- **Salvatore (Local Font)** → Fonte utilizada nos títulos.
 
-Framer Motion → Biblioteca de animações modernas para React.
+## Recursos Visuais
+- Background em vídeo (`.webm` + `.mp4`)
+- Glassmorphism UI
+- Glow effects
+- Scroll animations
 
-Tipografia
+---
 
-next/font → Carregamento otimizado de fontes.
+# ✨ Funcionalidades
 
-Inter (Google Fonts) → Fonte principal do site.
-
-Salvatore (Local Font) → Fonte utilizada nos títulos.
-
-Recursos Visuais
-
-Background em vídeo (.webm + .mp4)
-
-Glassmorphism UI
-
-Glow effects
-
-Scroll animations
-
-✨ Funcionalidades
-🎥 Background em vídeo
-
-O site possui um vídeo em background otimizado, carregado apenas em desktop para melhorar a performance mobile.
+## 🎥 Background em vídeo
+O site possui um **vídeo em background otimizado**, carregado apenas em desktop para melhorar a performance em dispositivos móveis.
 
 Suporte a:
 
-.webm
+- `.webm`
+- `.mp4`
+- fallback com imagem (`poster`)
 
-.mp4
+---
 
-fallback com imagem (poster)
+## 🎬 Animações modernas
 
-🎬 Animações modernas
+Utilizando **Framer Motion**, o site possui:
 
-Utilizando Framer Motion, o site possui:
+- animações ao entrar na viewport
+- animações em cascata (stagger)
+- efeitos hover premium
+- micro-interações suaves
 
-animações ao entrar na viewport
+---
 
-animações em cascata (stagger)
+## 🖱 Cursor personalizado
 
-efeitos hover premium
+Um **cursor customizado animado** substitui o cursor padrão no desktop, criando uma experiência visual mais imersiva.
 
-micro-interações suaves
+---
 
-🖱 Cursor personalizado
+## ⏳ Loading Screen
 
-Um cursor customizado animado substitui o cursor padrão no desktop, criando uma experiência visual mais imersiva.
+Tela de carregamento com **animação da marca Amplifica** antes da exibição do site.
 
-⏳ Loading Screen
+---
 
-Tela de carregamento com animação da marca Amplifica antes da exibição do site.
-
-🎨 Interface moderna
+## 🎨 Interface moderna
 
 O design utiliza:
 
-Glassmorphism
+- Glassmorphism
+- Blur effects
+- Glow effects
+- Gradientes suaves
 
-Blur effects
+---
 
-Glow effects
-
-Gradientes suaves
-
-📱 Layout responsivo
+## 📱 Layout responsivo
 
 Totalmente otimizado para:
 
-Desktop
+- Desktop
+- Tablet
+- Mobile
 
-Tablet
+---
 
-Mobile
+# 📂 Estrutura do Projeto
 
-📂 Estrutura do Projeto
+```
+
 src
 │
 ├── app
-│   ├── layout.js        # Layout global da aplicação
-│   ├── page.js          # Página principal
-│   └── globals.css      # Estilos globais
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
 │
 ├── components
 │   ├── Navbar.js
@@ -117,7 +116,7 @@ src
 │   └── ClientEffects.js
 │
 ├── lib
-│   └── animations.js    # Configurações de animação reutilizáveis
+│   └── animations.js
 │
 public
 │
@@ -127,65 +126,108 @@ public
 │   └── Salvatore.ttf
 │
 └── imagens
-🛠 Como rodar o projeto localmente
-1️⃣ Clone o repositório
+
+````
+
+---
+
+# 🛠 Como rodar o projeto localmente
+
+## 1. Clone o repositório
+
+```bash
 git clone https://github.com/victorlfdev/landingpage-amplifica.git
-2️⃣ Acesse a pasta do projeto
+````
+
+---
+
+## 2. Acesse a pasta do projeto
+
+```bash
 cd landingpage-amplifica
-3️⃣ Instale as dependências
+```
+
+---
+
+## 3. Instale as dependências
+
+```bash
 npm install
-4️⃣ Inicie o servidor de desenvolvimento
+```
+
+---
+
+## 4. Inicie o servidor de desenvolvimento
+
+```bash
 npm run dev
+```
 
 O site estará disponível em:
 
+```
 http://localhost:3000
-🧩 Scripts disponíveis
-npm run dev      # servidor de desenvolvimento
-npm run build    # build de produção
+```
+
+---
+
+# 🧩 Scripts disponíveis
+
+```bash
+npm run dev      # inicia servidor de desenvolvimento
+npm run build    # gera build de produção
 npm run start    # inicia versão de produção
 npm run lint     # verifica problemas no código
-⚡ Otimizações implementadas
+```
 
-O projeto utiliza diversas otimizações modernas do Next.js:
+---
 
-carregamento otimizado de fontes
+# ⚡ Otimizações implementadas
 
-lazy loading automático
+O projeto utiliza diversas otimizações modernas do **Next.js**:
 
-otimização de assets
+* carregamento otimizado de fontes
+* lazy loading automático
+* otimização de assets
+* server components
+* divisão automática de código
 
-server components
+---
 
-divisão automática de código
+# 📬 Contato
 
-📬 Contato
-
-💼 Amplifica — Amplificando ideias, criando conexões
+**Amplifica — Amplificando ideias, criando conexões**
 
 📷 Instagram
-https://instagram.com/amplifica.estudio
+[https://instagram.com/amplifica.estudio](https://instagram.com/amplifica.estudio)
 
 ✉️ E-mail
-amplifica@usd21.org
+[amplifica@usd21.org](mailto:amplifica@usd21.org)
 
-👨‍💻 Desenvolvedor
+---
 
-Projeto desenvolvido por Victor Lima.
+# 👨‍💻 Desenvolvedor
 
-GitHub:
-https://github.com/victorlfdev
+Projeto desenvolvido por **Victor Lima**
 
-📜 Licença
+GitHub
+[https://github.com/victorlfdev](https://github.com/victorlfdev)
+
+---
+
+# 📜 Licença
 
 Este projeto utiliza:
 
-Next.js
+* **Next.js**
+* **React**
+* **TailwindCSS**
 
-React
+Todos licenciados sob **MIT License**.
 
-TailwindCSS
+---
 
-Todos licenciados sob MIT License.
+✨ **Amplifica — Amplificando ideias, criando conexões.**
 
-💡 Amplifica — Amplificando ideias, criando conexões.
+```
+```
