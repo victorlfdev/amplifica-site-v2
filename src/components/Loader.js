@@ -12,9 +12,9 @@ export default function Loader() {
     >
       <motion.img
         initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        src="/imagens/Tipografia branco.webp"
+        animate={{ scale: 2.5, opacity: 0.6 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        src="/imagens/Icone branco.webp"
         alt="Amplifica"
         className="h-10"
       ></motion.img>
