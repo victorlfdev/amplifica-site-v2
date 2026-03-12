@@ -20,7 +20,7 @@ export default function Header() {
       </nav>
 
       <a
-        href="https://wa.me/5511919837497"
+        href="https://wa.me/5511976589202"
         className="hidden md:inline-flex px-4 py-2 bg-yellow-500 text-black rounded-full"
       >
         Quero Amplificar
