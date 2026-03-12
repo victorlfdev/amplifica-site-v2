@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
-import Cursor from "./Cursor";
+// import Cursor from "./Cursor";
 
 export default function ClientEffects() {
   const [loading, setLoading] = useState(true);
@@ -17,8 +17,9 @@ export default function ClientEffects() {
 
   return (
     <>
-      <Cursor />
+      
       {loading && <Loader />}
+      {/* <Cursor /> */}
     </>
   );
 }

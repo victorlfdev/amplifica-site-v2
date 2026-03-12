@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 
 import ClientEffects from "../components/ClientEffects";
+import Cursor from "@/components/Cursor";
 
 // Fonte Inter
 const inter = Inter({
@@ -41,6 +42,10 @@ export default function RootLayout({ children }) {
       >
         {/* Componentes que usam JS do navegador */}
         <ClientEffects />
+        <Cursor />
+
+        <div className="fixed inset-0 -z-30 bg-gradient-to-tr from-yellow-800 via-gray-800 to-black h-full w-full
+        "></div>
 
         {/* Vídeo de fundo */}
         <video

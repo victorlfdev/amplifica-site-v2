@@ -38,18 +38,22 @@ export default function Cursor() {
   }, []);
 
   return (
-    <motion.div
+    <motion.img
+      src="/imagens/cursor.png"
+      initial={{ opacity: 0 }}
       animate={{
-        x: position.x - 12,
-        y: position.y - 12,
-        scale: hovering ? 2 : 1,
+        opacity: 1,
+        x: position.x - 5,
+        y: position.y - 5,
+        scale: hovering ? 1.5 : 1,
       }}
       transition={{
+        duration: 1.5,
         type: "spring",
         stiffness: 800,
         damping: 50,
       }}
-      className="pointer-events-none fixed top-0 left-0 z-[200] h-6 w-6 rounded-full bg-yellow-400"
-    />
+      className="hidden md:block pointer-events-none fixed top-0 left-0 z-[200] h-8 w-8 border-yellow-400"
+    ></motion.img>
   );
 }
