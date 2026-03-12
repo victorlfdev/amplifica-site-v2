@@ -1,14 +1,14 @@
-import "./globals.css"
-import localFont from "next/font/local"
-import { Inter } from "next/font/google"
+import "./globals.css";
+import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
-import ClientEffects from "../components/ClientEffects"
+import ClientEffects from "../components/ClientEffects";
 
 // Fonte Inter
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-})
+});
 
 // Fonte Salvatore
 const salvatore = localFont({
@@ -25,13 +25,13 @@ const salvatore = localFont({
     },
   ],
   variable: "--font-salvatore",
-})
+});
 
 // Metadados
 export const metadata = {
   title: "Amplifica",
   description: "",
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -39,7 +39,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} relative text-gray-200 bg-gradient-to-tr from-yellow-800 via-gray-800 to-black min-h-screen overflow-x-hidden`}
       >
-
         {/* Componentes que usam JS do navegador */}
         <ClientEffects />
 
@@ -60,8 +59,7 @@ export default function RootLayout({ children }) {
         <div className="fixed inset-0 bg-black/60 -z-10"></div>
 
         {children}
-
       </body>
     </html>
-  )
+  );
 }
